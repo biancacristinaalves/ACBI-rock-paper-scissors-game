@@ -1,6 +1,7 @@
 body {
     background-color: #f8f9fa;
     margin-top: 20px;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -28,6 +29,11 @@ h1 {
     margin: 0 10px;
     cursor: pointer;
     height: 125px;
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .choice-images {
@@ -39,6 +45,11 @@ h1 {
         margin: 0 10px;
         cursor: pointer;
         height: 125px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -54,4 +65,69 @@ h1 {
 .how-to-play {
     padding: 20px;
     font-size: 20px;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Media Queries para responsividade */
+
+@media (max-width: 768px) {
+    .menu {
+        margin: 20px;
+    }
+
+    .menu-buttons {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .choice-image {
+        width: 140px;
+        height: 90px;
+        margin: 0 5px;
+    }
+
+    .choice-images {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 140px;
+            height: 90px;
+            margin: 10px 0;
+        }
+    }
+
+    .form-control {
+        margin: 10px 0 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .menu-buttons {
+        font-size: 1rem;
+    }
+
+    .choice-image {
+        width: 100px;
+        height: 65px;
+        margin: 0 3px;
+    }
+
+    .choice-images {
+        img {
+            width: 100px;
+            height: 65px;
+            margin: 8px 0;
+        }
+    }
+
+    .form-control {
+        margin: 10px 0 15px 0;
+    }
 }
