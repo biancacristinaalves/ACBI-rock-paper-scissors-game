@@ -177,7 +177,7 @@ function resetGame() {
     document.getElementById('menu').classList.remove('d-none');
     document.getElementById('game').classList.add('d-none');
     document.getElementById('setup').classList.add('d-none');
-    
+
     const howToPlay = document.getElementById('howToPlay');
     if (howToPlay) howToPlay.style.display = 'block';
 }
