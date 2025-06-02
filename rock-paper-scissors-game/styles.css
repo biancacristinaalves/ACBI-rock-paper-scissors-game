@@ -1,0 +1,57 @@
+body {
+    background-color: #f8f9fa;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.page-title {
+    cursor: pointer;
+}
+
+.menu {
+    margin: 50px;
+}
+
+.menu-buttons {
+    margin-bottom: 50px;
+}
+
+.choice-buttons {
+    margin: 10px 0;
+}
+
+.choice-image {
+    width: 200px;
+    margin: 0 10px;
+    cursor: pointer;
+    height: 125px;
+}
+
+.choice-images {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 200px;
+        margin: 0 10px;
+        cursor: pointer;
+        height: 125px;
+    }
+}
+
+.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-control {
+    margin: 20px;
+}
+
+.how-to-play {
+    padding: 20px;
+    font-size: 20px;
+}
